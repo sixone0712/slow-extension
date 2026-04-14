@@ -64,7 +64,7 @@
       '<style>' +
       '@keyframes slide-in { from { transform:translateX(100%); } to { transform:translateX(0); } }' +
       ':host { position:fixed; top:0; left:0; width:100%; height:100%; z-index:99999; }' +
-      '.overlay { width:100%; height:100%; background:#fff; display:flex; flex-direction:column; animation:slide-in 0.3s ease-in; }' +
+      '.overlay { width:100%; height:100%; background:#fff; display:flex; flex-direction:column; animation:slide-in 0.3s ease-in; user-select:none; }' +
       '.header { height:40px; background:#f5f5f5; display:flex; align-items:center; padding:0 12px; ' +
       'cursor:pointer; flex-shrink:0; font-size:14px; border-bottom:1px solid #e0e0e0; user-select:none; }' +
       '.header:hover { background:#eee; }' +

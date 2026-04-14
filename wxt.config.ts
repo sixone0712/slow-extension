@@ -9,7 +9,7 @@ export default defineConfig({
     name: "Slow",
     description:
       "Flow 웹(flow.team)의 레이아웃을 채팅/알림 중심으로 재구성하는 크롬 익스텐션",
-    version: "0.1.0",
+    version: "0.1.1",
     permissions: ["storage", "scripting", "activeTab"],
     host_permissions: ["*://flow.team/*"],
     icons: {
