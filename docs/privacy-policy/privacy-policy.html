@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slow - 개인정보처리방침</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      color: #333;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.8em; border-bottom: 2px solid #eee; padding-bottom: 12px; }
+    h2 { font-size: 1.2em; margin-top: 32px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    strong { color: #111; }
+    a { color: #0969da; }
+    .updated { color: #666; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h1>개인정보처리방침</h1>
+  <p class="updated">최종 수정일: 2026년 4월 14일</p>
+
+  <h2>수집하는 개인정보</h2>
+  <p>Slow 익스텐션은 개인정보를 수집, 저장, 전송하지 않습니다.</p>
+
+  <h2>데이터 저장</h2>
+  <p>익스텐션의 ON/OFF 설정값만 사용자의 브라우저 로컬 저장소(chrome.storage.local)에 저장됩니다. 이 데이터는 외부 서버로 전송되지 않습니다.</p>
+
+  <h2>외부 서비스 연동</h2>
+  <p>본 익스텐션은 외부 서버와 통신하지 않습니다. 모든 기능은 사용자의 브라우저 내에서만 동작합니다.</p>
+
+  <h2>권한 사용 목적</h2>
+  <ul>
+    <li>
+      <strong>storage</strong>: 익스텐션의 활성화/비활성화(ON/OFF) 상태를 브라우저 로컬 저장소(chrome.storage.local)에 저장하는 데 사용됩니다. 저장된 데이터는 사용자의 브라우저 내에서만 유지되며, 외부 서버로 전송되지 않습니다.
+    </li>
+    <li>
+      <strong>scripting</strong>: 사용자가 팝업에서 익스텐션을 활성화/비활성화할 때, 현재 열려 있는 Flow 웹 탭에 변경된 설정값을 즉시 반영하기 위해 사용됩니다. 설정 변경 시에만 실행되며, 사용자 데이터를 읽거나 수집하지 않습니다.
+    </li>
+    <li>
+      <strong>activeTab</strong>: 사용자가 익스텐션 아이콘을 클릭했을 때, 현재 활성화된 탭에서만 스크립트를 실행할 수 있도록 제한하는 데 사용됩니다. 다른 탭이나 백그라운드에서의 접근 권한은 없습니다.
+    </li>
+    <li>
+      <strong>호스트 권한 (flow.team)</strong>: flow.team 도메인에서만 동작하는 콘텐츠 스크립트를 주입하기 위해 사용됩니다. 이 스크립트는 채팅 목록의 레이아웃을 모바일 친화적으로 재구성하고, 채팅방을 새 창(팝업) 대신 오버레이로 표시하여 사용 편의성을 개선합니다. flow.team 이외의 사이트에는 어떠한 영향도 미치지 않습니다.
+    </li>
+  </ul>
+
+  <h2>문의</h2>
+  <p>본 개인정보처리방침에 관한 문의사항은 아래로 연락해 주세요.</p>
+  <ul>
+    <li>GitHub: <a href="https://github.com/sixone0712/slow-extension/issues">https://github.com/sixone0712/slow-extension/issues</a></li>
+  </ul>
+</body>
+</html>

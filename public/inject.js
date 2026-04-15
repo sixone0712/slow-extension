@@ -54,7 +54,12 @@
 
   function openChatInOverlay(target) {
     var existing = document.getElementById('slow-host');
-    if (existing) existing.remove();
+    if (existing) {
+      var existingIframe = existing.shadowRoot.querySelector('iframe');
+      if (existingIframe && existingIframe.name === target)
+        return existingIframe.contentWindow;
+      existing.remove();
+    }
 
     var host = document.createElement('div');
     host.id = 'slow-host';
@@ -112,6 +117,17 @@
 
     return iframe.contentWindow;
   }
+
+  // OpenUtil.openMessengerByRoomSrno 래핑: 동기적으로 오버레이 미리 생성
+  function wrapOpenMessenger() {
+    if (typeof OpenUtil === 'undefined' || !OpenUtil.openMessengerByRoomSrno) return;
+    var _orig = OpenUtil.openMessengerByRoomSrno;
+    OpenUtil.openMessengerByRoomSrno = function (roomSrno) {
+      openChatInOverlay('POPUP_CHAT_' + roomSrno);
+      _orig.apply(this, arguments);
+    };
+  }
+  wrapOpenMessenger();
 
   document.addEventListener(
     'keydown',
