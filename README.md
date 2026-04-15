@@ -12,7 +12,7 @@ Flow 맥 앱이 너무 느리고 웹을 쓰자니 화면 줄이면 채팅창이 
 
 ## 설치 방법
 
-1. [Releases](./releases/) 페이지에서 최신 `.zip` 파일 다운로드
+1. [Releases](https://github.com/sixone0712/slow-extension/releases) 페이지에서 `slow-x.x.x-chrome.zip` 파일 다운로드
 2. 압축 해제
 3. 크롬에서 `chrome://extensions` 접속
 4. 우측 상단 **개발자 모드** 활성화
